@@ -1,0 +1,84 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+  overflow: hidden;
+}
+
+.modal img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 0;
+  object-fit: contain;
+  box-shadow: none;
+}
+
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.closeButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal p {
+  margin: 8px 0;
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+.author {
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 12px;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff4500;
+  font-size: 1.2rem;
+}
+
+.likes span {
+  margin-left: 8px;
+}
+
+.likes svg {
+  width: 24px;
+  height: 24px;
+}
+
+
